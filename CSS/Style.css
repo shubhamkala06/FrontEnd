@@ -2,22 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'montserrat';
 }
 
-/*--------------------------------Type Selectors--------------------------*/
 html, body{
     height: 100%;
     width: 100%;
-}
-
-nav{
-    height: 150px;
-    width: 100%;
-    background-color: red;
 }
 
 a, a:hover, a:focus, a:active{
     text-decoration: none;
     color: inherit;
 }
+
+/*--------------------Navigation bar--------------------*/
