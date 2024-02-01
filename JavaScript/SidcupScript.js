@@ -1,3 +1,17 @@
+//-------------Functions-------------
+function mouseTracker(e){
+    cursor.style.left = (e.x) + "px";
+    cursor.style.top = (e.y) + "px";
+    cursorBlur.style.left = (e.x - 200) + "px";
+    cursorBlur.style.top = (e.y - 200) + "px";
+}
+
+//-------------Variables-------------
+const cursor = document.querySelector(".cursor");
+const cursorBlur = document.querySelector(".cursorBlur")
+//-------------Event Listeners-------------
+document.addEventListener("mousemove",mouseTracker);
+//---------------GSAP----------------
 gsap.to("nav",{
     backgroundColor: "#000",
     height: "110px",
