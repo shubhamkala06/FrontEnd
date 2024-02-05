@@ -87,9 +87,10 @@ video{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    z-index: 1;
+    z-index: 9;
 }
 .page1 > h1{
+    margin-top: clamp(50px,26vh,150px);
     font-size: clamp(24px,10vw,150px);
     font-weight: 900;
     position: relative;
@@ -117,9 +118,10 @@ video{
 }
 /*------------Page-2----------*/
 .page2{
+    margin-top: clamp(30px,25vh,80px);
     width: 100%;
-    height: 100vh;
-    z-index: 10;
+    min-height: 100vh;
+    z-index: 9;
 }
 
 /*-------Scroller------*/
@@ -129,6 +131,7 @@ video{
     overflow-y: hidden;
     position: relative;
     z-index: 10;
+    margin-bottom: clamp(80px,25vh,150px);
 }
 
 .scroller::-webkit-scrollbar{
@@ -162,13 +165,14 @@ video{
 
 /*-----------About Us----------*/
 .aboutUs{
+    position: relative;
     width: 100%;
     height: 40vh;
     padding: 0 50px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+    z-index: 10;
 }
 
 .aboutUsText{
@@ -177,16 +181,100 @@ video{
 }
 
 .aboutUs img{
-    width: clamp(100px,25vw,220px);
-    height: clamp(100px,25vh,220px);
+    width: clamp(60px,25vw,220px);
+    height: clamp(60px,35vh,220px);
+    border-radius: 30px;
 }
 
 .aboutUs h3{
-    font-size: clamp(30px,5vw,54px);
+    font-size: clamp(19px,5vw,54px);
     font-weight: 800;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
-/* .aboutUs p{
-    
-} */
+.aboutUs p{
+    font-size: clamp(14px,1.5vw,24px);
+    line-height: clamp(16.8px,1.5rem,26px);
+    padding-bottom: 50px;
+}
+
+/*-----------Cards----------*/
+.cardsContainer{
+    margin-top: clamp(50px,20vh,120px);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 75vh;
+}
+
+.card{
+    height: 90%;
+    width: 28%;
+    border-radius: 30px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 9;
+    transition: all ease 0.7s;
+}
+
+.card:hover .overlay{
+    opacity: 1;
+}
+
+.c1{
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-toptracer-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+}
+
+.c2{
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4-1024x1024.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+}
+
+.c3{
+    background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-lessons-1024x682.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: var(--cutomGreen);
+    padding: 16% 5%;
+    border-radius: 30px;
+    transition: all ease 0.7s;
+    opacity: 0;
+}
+
+.overlay h4{
+    color: #000;
+    text-align: center;
+    font-size: clamp(24px,2.5vw,40px);
+    font-weight: 800;
+    margin-bottom: 10%;
+}
+
+.overlay p{
+    color: #000;
+    font-size: clamp(14px,1.2vw,25px);
+    margin-bottom: 5%;
+    padding: 0% 4%;
+    font-weight: 400;
+}
+
+/*-----------NewsLetter----------*/
+.newsletter{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.newsletter h4{
+    width: 50%;
+    font-size: 23px;
+
+}
+
+.newsletter img{
+    height: 100%;
+    background-color: var(--cutomGreen);
+}

@@ -29,7 +29,7 @@ gsap.to(".main",{
     scrollTrigger:{
         trigger: ".main",
         scroller: "body",
-        start: "top -25%",
+        start: "top -30%",
         end: "top -70%",
         scrub: 2
     }
