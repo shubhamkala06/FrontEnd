@@ -19,7 +19,6 @@ html, body{
 a, a:hover, a:focus, a:active{
     text-decoration: none;
     color: inherit;
-    cursor: pointer;
 }
 
 @keyframes scroll {
@@ -63,6 +62,7 @@ video{
     border-radius: 50%;
     position: fixed;
     z-index: 11;
+    transition: all 0.1s;
 }
 .cursorBlur{
     width: 400px;
@@ -78,7 +78,7 @@ video{
     position: relative;
     background-color: rgb(0, 0, 0, 0.39);
 }
-/*------------Page-1----------*/
+/*----------------Page-1-----------------*/
 .page1{
     height: 100vh;
     width: 100%;
@@ -116,7 +116,7 @@ video{
     font-size: clamp(14px,1.2vw,26px);
     text-align: center;
 }
-/*------------Page-2----------*/
+/*-------------------Page-2----------------*/
 .page2{
     margin-top: clamp(30px,25vh,80px);
     width: 100%;
@@ -131,7 +131,7 @@ video{
     overflow-y: hidden;
     position: relative;
     z-index: 10;
-    margin-bottom: clamp(80px,25vh,150px);
+    margin-bottom: clamp(80px,25vh,130px);
 }
 
 .scroller::-webkit-scrollbar{
@@ -193,14 +193,14 @@ video{
 }
 
 .aboutUs p{
-    font-size: clamp(14px,1.5vw,24px);
+    font-size: clamp(14px,2vw,18px);
     line-height: clamp(16.8px,1.5rem,26px);
     padding-bottom: 50px;
 }
 
 /*-----------Cards----------*/
 .cardsContainer{
-    margin-top: clamp(50px,20vh,120px);
+    margin-top: clamp(50px,20vh,80px);
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -262,19 +262,174 @@ video{
 
 /*-----------NewsLetter----------*/
 .newsletter{
-    height: 30vh;
+    margin-top: 5%;
+    height: 35vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: linear-gradient(to left bottom, #119f3a, #ace022);
 }
 
 .newsletter h4{
-    width: 50%;
-    font-size: 23px;
-
+    width: 45%;
+    line-height: clamp(24px,3vw,45px);
+    font-size: clamp(16px,3vw,23px);
+    font-weight: 800;
+    text-align: center;
+    color: #000;
 }
 
 .newsletter img{
     height: 100%;
+    object-fit: cover;
+    width: 14%;
+}
+
+/*---------------------Page-3--------------------*/
+.page3{
+    min-height: 100vh;
+    width: 100%;
+}
+
+/*-----------Food and Drink----------*/
+.foodNdrink{
+    margin-top: 15%;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    gap: clamp(20px,10%,100px);
+    align-items: center;
+    margin-bottom: 20%;
+}
+
+.carousel{
+    width: 30%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.carousel img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    border-radius: 20px;
+    transition: transform 0.9s ease;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    gap: 15px;
+    bottom: 5px;
+}
+
+.outerBorder{
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.To1{
+    border: 2px solid #91b508;
+}
+
+.btn{
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background-color: transparent;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 1px solid white;
+    z-index: 9;
+}
+
+.to1{
     background-color: var(--cutomGreen);
+}
+
+.bannerTxt{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bannerTxt h4{
+    font-size: clamp(18px,3.2vw,30px);
+    font-weight: 900;
+    margin-bottom: clamp(16px,2.5vh,22px);
+}
+.bannerTxt .txt{
+    font-size: clamp(13px,1.25vw,16px);
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: clamp(10px,2vh,25px);
+}
+
+button{
+    font-weight: 600;
+    font-size: clamp(10px,1.25vw,15px);
+    margin-top: 5%;
+    align-self: flex-start;
+    text-align: center;
+    width: clamp(110px,15vw,175px);
+    height: clamp(30px,6.6vh,40px);
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2px solid var(--cutomGreen);
+    z-index: 10;
+    cursor: pointer;
+}
+button:hover{
+    background-color: var(--cutomGreen);
+}
+/*-----------Quote----------*/
+.quote{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    height: 60vh;
+}
+
+.quote p{
+    width: 60%;
+    text-align: center;
+    font-size: clamp(0px,5vw,30px);
+    font-weight: 700;
+}
+.quote img{
+    height: 60px;
+    width: min(50px,5vw);
+    position: absolute;
+}
+
+#colon1{
+    left: 18%;
+    top: -20%;
+}
+
+#colon2{
+    right: 18%;
+    bottom: 33%;
+}
+
+/*---------------------Page-4--------------------*/
+
+.page4{
+    height: 40vh;
+    width: 100%;
+    background-color: red;
 }
