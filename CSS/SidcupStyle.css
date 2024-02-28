@@ -205,12 +205,12 @@ video{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    height: 75vh;
+    height: 65vh;
 }
 
 .card{
     height: 90%;
-    width: 28%;
+    width: 25%;
     border-radius: 30px;
     background-position: center;
     background-size: cover;
@@ -263,7 +263,7 @@ video{
 
 /*-----------NewsLetter----------*/
 .newsletter{
-    margin-top: 5%;
+    margin-top: 10%;
     height: 35vh;
     display: flex;
     align-items: center;
@@ -294,14 +294,14 @@ video{
 
 /*-----------Food and Drink----------*/
 .foodNdrink{
-    margin-top: 15%;
+    margin-top: 5%;
     width: 100%;
     height: 60vh;
     display: flex;
     justify-content: center;
     gap: clamp(20px,10%,100px);
     align-items: center;
-    margin-bottom: 20%;
+    margin-bottom: 15%;
 }
 
 .carousel{
@@ -432,5 +432,5 @@ button:hover{
 .page4{
     height: 40vh;
     width: 100%;
-    background-color: red;
+    
 }
