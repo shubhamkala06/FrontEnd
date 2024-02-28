@@ -97,19 +97,19 @@ gsap.from(".aboutUsText,.aboutUs img",{
     }
 })
 
-gsap.from(".card",{
-    scale:0.8,
-    opacity:0,
-    duration:1,
-    stagger:0.1,
-    scrollTrigger:{
-        trigger:".card",
-        scroller:"body",
-        start:"top 70%",
-        end:"top 65%",
-        scrub:1
-    }
-})
+// gsap.from(".card",{
+//     scale:0.8,
+//     opacity:0,
+//     duration:1,
+//     stagger:0.1,
+//     scrollTrigger:{
+//         trigger:".card",
+//         scroller:"body",
+//         start:"top 70%",
+//         end:"top 65%",
+//         scrub:1
+//     }
+// })
 
 gsap.from("#colon1",{
     y:-60,
