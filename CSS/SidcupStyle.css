@@ -7,6 +7,11 @@
     cursor: default;
 }
 
+*::selection{
+    background-color: #fff;
+    color: var(--cutomGreen);
+}
+
 :root{
     --cutomGreen : #91b508;
 }
