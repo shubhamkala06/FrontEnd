@@ -45,6 +45,7 @@ const navs = document.querySelectorAll(".navigation");
 slides.forEach((slide,index)=>{
     slide.style.left = `${index*100}%`;
 })
+// console.log(document.querySelector(".page4 h1"));
 //-------------Event Listeners-------------
 window.addEventListener("mousemove",mouseTracker);
 
@@ -138,3 +139,17 @@ gsap.from("#colon2",{
         scrub:3
     }
 })
+
+gsap.from(".page4 h1",{
+    y:70,
+    duration:1,
+    scrollTrigger:{
+        trigger:"#head",
+        scroller:"body",
+        // markers:true,
+        start:"top 100%",
+        end:"top 90%",
+        scrub:1.5
+    }
+})
+
