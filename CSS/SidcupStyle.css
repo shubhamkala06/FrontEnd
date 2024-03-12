@@ -72,7 +72,7 @@ video{
     position: fixed;
     filter: blur(40px);
     z-index: 9;
-    transition: all 0.1s ease;
+    transition: all 0.3s ease;
 }
 /*-------------------------------Main Content---------------------------------*/
 .main{
@@ -182,8 +182,8 @@ video{
 }
 
 .aboutUs img{
-    width: clamp(60px,25vw,220px);
-    height: clamp(60px,35vh,220px);
+    width: clamp(80px,40vw,280px);
+    height: clamp(80px,50vh,260px);
     border-radius: 30px;
 }
 
@@ -209,14 +209,15 @@ video{
 }
 
 .card{
-    height: 90%;
-    width: 25%;
+    height: 45%;
+    width: 12.5%;
     border-radius: 30px;
     background-position: center;
     background-size: cover;
     position: relative;
     z-index: 9;
     transition: all ease 0.7s;
+    opacity: 0;
 }
 
 .card:hover .overlay{
@@ -239,7 +240,7 @@ video{
     height: 100%;
     width: 100%;
     background-color: var(--cutomGreen);
-    padding: 16% 5%;
+    padding: 10% 5%;
     border-radius: 30px;
     transition: all ease 0.7s;
     opacity: 0;
@@ -248,14 +249,14 @@ video{
 .overlay h4{
     color: #000;
     text-align: center;
-    font-size: clamp(24px,2.5vw,40px);
+    font-size: clamp(10px,3vw,16px);
     font-weight: 800;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 .overlay p{
     color: #000;
-    font-size: clamp(14px,1.2vw,25px);
+    font-size: clamp(5px,1vw,9px);
     margin-bottom: 5%;
     padding: 0% 4%;
     font-weight: 400;
