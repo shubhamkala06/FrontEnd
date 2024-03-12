@@ -383,12 +383,12 @@ video{
 
 button{
     font-weight: 600;
-    font-size: clamp(10px,1.25vw,15px);
+    font-size: clamp(10px,1.5vw,16px);
     margin-top: 5%;
     align-self: flex-start;
     text-align: center;
-    width: clamp(110px,15vw,175px);
-    height: clamp(30px,6.6vh,40px);
+    width: clamp(110px,16vw,180px);
+    height: clamp(30px,7vh,50px);
     background-color: transparent;
     border-radius: 20px;
     border: 2px solid var(--cutomGreen);
@@ -419,13 +419,13 @@ button:hover{
 }
 
 #colon1{
-    left: 18%;
-    top: -20%;
+    left: 16%;
+    top: -13%;
 }
 
 #colon2{
     right: 18%;
-    bottom: 33%;
+    bottom: 39%;
 }
 
 /*---------------------Page-4--------------------*/

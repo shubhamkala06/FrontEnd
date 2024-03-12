@@ -107,8 +107,8 @@ gsap.to(".card",{
         trigger:".card",
         // markers: true,
         scroller:"body",
-        start:"top 85%",
-        end:"top 70%",
+        start:"top 80%",
+        end:"top 65%",
         scrub:1
     }
 })
