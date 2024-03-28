@@ -96,7 +96,7 @@ nav img{
     width: clamp(20px,4.4vw,80px);
     height: clamp(10px,6.1vh,48px);
     border: 1px solid #6689eb;
-    border-radius: 20px;
+    border-radius: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -146,7 +146,7 @@ nav img{
     font-size: 13.5px;
     width: clamp(50px,12.3vw,240px);
     height: clamp(30px,8.1vh,225px);
-    border-radius: 30px;
+    border-radius: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
