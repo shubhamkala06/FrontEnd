@@ -1,8 +1,181 @@
-body{
-    height: 100vh;
-    background-color: blue;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: default;
 }
-symbol{
+
+html, body{
+    min-height: 100%;
     width: 100%;
-    height: 20%;
+    font-family: Jost;
 }
+
+a, a:hover, a:focus, a:active{
+    text-decoration: none;
+    color: inherit;
+}
+
+.main{
+    position: relative;
+    overflow: hidden;
+}
+
+.page1>video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+/* -----------------------------Animations-------------------------- */
+@keyframes updown {
+    0%,10%,20%,30%,40%{
+        transform: translateY(0%);
+    }
+    70% {
+      transform: translateY(-50%);
+    }
+    80%{
+        transform: translateY(0%);
+    }
+    90%{
+        transform: translateY(-20%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+  
+/* -----------------------------Page 1-------------------------- */
+/* ------------Navigation Bar------------ */
+.page1{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    z-index: 1;
+}
+
+nav{
+    height: 10vh;
+    padding: 3.1% 4%;
+    padding-right: 9.9%;
+    width: 100%;
+    height: clamp(55px,12vh,75px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    height: clamp(35px,8vh,60px);
+    width: clamp(35px,3.8vw,60px);
+    margin-top: 5px;
+    margin-left: 3px;
+}
+
+.book{
+    width: clamp(65px,8.5vw,155px);
+    height: clamp(18px,6.1vh,50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(10px,0.99vw,20px);
+    border: 1px solid #6689eb;
+    border-radius: 20px;
+}
+
+.menu{
+    z-index: 2;
+    position: fixed;
+    top: 4%;
+    right: 4.4%;
+    width: clamp(20px,4.4vw,85px);
+    height: clamp(10px,6.1vh,50px);
+    border: 1px solid #6689eb;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24%;
+}
+
+.line1, .line2{
+    width: 25.5%;
+    height: 1px;
+    background-color: white;
+}
+
+/* ------------Page 1 Content------------ */
+.p1Content{
+    margin-top: 9.8%;
+    padding-left: 9.4%;
+}
+
+.p1Content > h1{
+    width: 50%;
+    font-size: clamp(60px,6.55vw,130px);
+    font-weight: 320;
+    line-height: clamp(60px,6.55vw,130px);
+    padding-bottom: 3.5%;
+    letter-spacing: -0.1px;
+}
+
+.p1Content>div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.8%;
+}
+
+.p1Content>div>p{
+    width: 28%;
+    font-size: clamp(15px,1.39vw,30px);
+    font-weight: 320;
+    letter-spacing: -0.5px;
+}
+
+.p1Content>div>div{
+    align-self: flex-end;
+    background-color: white;
+    color: #123bb6;
+    font-size: 13.5px;
+    width: clamp(50px,12vw,240px);
+    height: 45px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: normal;
+}
+
+.scroll{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 6.5%;
+    font-size: clamp(10px,0.9vw,20px);
+    font-weight: 320;
+    letter-spacing: 0.8px;
+    gap: 0.8%;
+}
+
+.scroll>span{
+    font-size: 16px;
+    font-weight: 100;
+    position: relative;
+    top: -5px;
+    animation: updown 2s linear infinite;
+}
+
+/* -----------------------------Page 2-------------------------- */
+.page2{
+    height: 100vh;
+    background-color: #0a3cce;
+    position: relative;
+    z-index: 2;
+}
+
