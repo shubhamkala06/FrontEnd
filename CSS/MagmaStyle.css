@@ -79,13 +79,13 @@ nav img{
 
 .book{
     width: clamp(65px,8.5vw,155px);
-    height: clamp(18px,6.1vh,50px);
+    height: clamp(18px,6.1vh,48px);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: clamp(10px,0.99vw,20px);
+    font-size: clamp(10px,0.99vw,18px);
     border: 1px solid #6689eb;
-    border-radius: 20px;
+    border-radius: 60px;
 }
 
 .menu{
@@ -93,8 +93,8 @@ nav img{
     position: fixed;
     top: 4%;
     right: 4.4%;
-    width: clamp(20px,4.4vw,85px);
-    height: clamp(10px,6.1vh,50px);
+    width: clamp(20px,4.4vw,80px);
+    height: clamp(10px,6.1vh,48px);
     border: 1px solid #6689eb;
     border-radius: 20px;
     display: flex;
@@ -112,15 +112,15 @@ nav img{
 
 /* ------------Page 1 Content------------ */
 .p1Content{
-    margin-top: 9.8%;
+    margin-top: 12%;
     padding-left: 9.4%;
 }
 
 .p1Content > h1{
     width: 50%;
-    font-size: clamp(60px,6.55vw,130px);
+    font-size: clamp(60px,6.55vw,120px);
     font-weight: 320;
-    line-height: clamp(60px,6.55vw,130px);
+    line-height: clamp(60px,6.55vw,120px);
     padding-bottom: 3.5%;
     letter-spacing: -0.1px;
 }
@@ -134,7 +134,7 @@ nav img{
 
 .p1Content>div>p{
     width: 28%;
-    font-size: clamp(15px,1.39vw,30px);
+    font-size: clamp(15px,1.39vw,25px);
     font-weight: 320;
     letter-spacing: -0.5px;
 }
@@ -144,8 +144,8 @@ nav img{
     background-color: white;
     color: #123bb6;
     font-size: 13.5px;
-    width: clamp(50px,12vw,240px);
-    height: 45px;
+    width: clamp(50px,12.3vw,240px);
+    height: clamp(30px,8.1vh,225px);
     border-radius: 30px;
     display: flex;
     justify-content: center;
