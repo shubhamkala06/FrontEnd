@@ -61,6 +61,7 @@ video{
 }
 /*------------Cursor----------*/
 .cursor{
+    pointer-events: none;
     width: 20px;
     height: 20px;
     background-color: var(--cutomGreen);
@@ -70,6 +71,7 @@ video{
     transition: all 0.1s ease;
 }
 .cursorBlur{
+    pointer-events: none;
     width: 400px;
     height: 400px;
     background-color: #92b50827;

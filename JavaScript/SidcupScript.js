@@ -1,7 +1,7 @@
 //-------------Functions-------------
 function mouseTracker(e){
-    cursor.style.left = (e.x-2) + "px";
-    cursor.style.top = (e.y+12) + "px";
+    cursor.style.left = (e.x-10) + "px";
+    cursor.style.top = (e.y-10) + "px";
     cursorBlur.style.left = (e.x - 200) + "px";
     cursorBlur.style.top = (e.y - 200) + "px";
 }
